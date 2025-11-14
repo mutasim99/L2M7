@@ -1,6 +1,6 @@
 //* if we have same property in many classes then we can add a parent class;
 
-class parent {
+class person {
     name: string;
     age: number;
     address: string;
@@ -18,11 +18,11 @@ class parent {
 }
 
 
-class Student extends parent {
+class Student extends person {
 
 };
 
-class Developer extends parent {
+class Developer extends person {
 
     designation: string;
 
