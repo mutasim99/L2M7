@@ -20,7 +20,7 @@ type NormalUser = {
 
 type AdminUser = {
     name: string;
-    role: string;
+    role: "Admin";
 };
 
 const getUserInfo = (user: NormalUser | AdminUser) => {
@@ -30,5 +30,8 @@ const getUserInfo = (user: NormalUser | AdminUser) => {
     }else{
        return  console.log(`${user.name} is a normal user`);
         
-    }
-}
+    };
+};
+
+
+getUserInfo({name:'mutasim', role:'Admin'})
